@@ -9,19 +9,25 @@
         <!-- Load all of the assets we are going to use -->
       <a-assets>
           <!-- Hilly sky for the background -->
-          <img id="hilly-sky" src="./assets/hilly-skybox.jpeg" />
+          <!-- <img id="winterlake" src="./assets/winterlake.exr" /> -->
+          <!-- New Skybox -->
+          <img id="skywater360" src="./assets/skywater360.webp" />
           <!-- Cute turtle -->
           <img id="sunglasses-turtle" src="./assets/sunglasses-turtle.png" />
-          <!-- Turtle 3D model -->
-        <a-asset-item id="turtle" src="./assets/turtle.glb" />
+          <!-- Josefa Boat 3D model -->
+        <a-asset-item id="Josefa" src="./assets/Josefa.glb" />
+        <a-asset-item id="devildance" src="./assets/devildance.glb" />
       </a-assets>
-      <a-image src="#sunglasses-turtle" position="0 3 -4" width="2.5" height="1.75" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-image>
-      <!-- Turtle -->
-      <a-entity position="-1 2 -4" scale="0.03 0.03 0.03" rotation="0 -180 0" gltf-model="#turtle" animation-mixer></a-entity>
+      <a-image src="#sunglasses-turtle" position="-1 2 -2" width="2.5" height="1.75" ></a-image>
+      <!-- animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" -->
+      <!-- Josefa -->
+      <a-entity position="-1 0 -4" scale="1 1 1" rotation="0 -180 0" gltf-model="#Josefa" animation-mixer></a-entity>
+      <!-- DevilDance -->
+      <a-entity position="-10 0 0" scale="1 1 1" rotation="0 -180 0" gltf-model="#Devildance" animation-mixer></a-entity>
       <!-- Blue box -->
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#0000EE"></a-box>
       <!-- Pink sphere -->
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-sphere position="1 1.25 -3" radius="0.75" color="#EF2D5E"></a-sphere>
       <!-- Yellow cylinder -->
       <a-cylinder
         position="1 0.75 -3"
@@ -44,7 +50,7 @@
       <!-- An ambient light that is grayish-white -->
       <a-entity light="type: ambient; color: #CCC"></a-entity>
     <!-- Sky background -->
-      <a-sky src="#hilly-sky"></a-sky>
+      <a-sky src="#skywater360"></a-sky>
     </a-scene>
   </body>
 </html>
